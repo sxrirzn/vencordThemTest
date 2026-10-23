@@ -12,9 +12,18 @@
 
 :root {
     /* main color */
-    --main -color: #b286df; /* main purple color */
+    --main-color: #b286df; /* main purple color */
     --hover-color: #D2B5F5; /* lighter purple color for hover effects */
-    --main-front: "fc-marshmellow"
+    --main-font: "fc-marshmellow";
+
+    
+    /* Soft Lavender Effects */
+    --honami-glow: 0 0 12px rgba(178, 134, 223, 0.35);
+    --honami-glow-hover: 0 0 16px rgba(210, 181, 245, 0.55);
+    --honami-border: rgba(210, 181, 245, 0.35);
+    --honami-radius: 10px;
+    --honami-transition: 0.2s ease;
+
 
     /* Background Settings */
      --background-image: url(https://media.discordapp.net/attachments/1557772911992115250/1563069477526970378/2026-06-18_190126.png?ex=6adc4963&is=6adaf7e3&hm=cf0b75be07dca39aee82cc8a806eb999291104a55c09b61148bce86b4e84ec3d&=&format=webp&quality=lossless&width=1536&height=959);
@@ -24,12 +33,6 @@
 }
 
 /* Details and Refinements */
-
-/* Transparent UI */
-.layers__160d8, .visual-refresh .chatContent_f75fb0, 
-.members_c8ffbb, .visual-refresh .sidebar_c48ade {
-    background: transparent !important;
-}
 
 /* Main App Layers */
 .layers__160d8 {
@@ -49,4 +52,159 @@
 /* Member List */
 .members_c8ffbb {
     background: rgba(178, 134, 223, 0.18) !important;
+}
+
+/* Preserve Background Visibility */
+.visual-refresh .container__2637a,
+.visual-refresh .chat_f75fb0 {
+    background: transparent !important;
+}
+
+
+/* Global Typography */
+
+/* Apply the Theme Font */
+body,
+button,
+input,
+textarea,
+select {
+    font-family: var(--main-font) !important;
+}
+
+
+/* Soft Glass Effect */
+
+/* Translucent Panels */
+.visual-refresh .sidebar_c48ade,
+.members_c8ffbb,
+.visual-refresh .chatContent_f75fb0 {
+    border: 1px solid var(--honami-border);
+}
+
+
+/* Glass-Like Surface for Tables */
+.visual-refresh .mainTableContainer__09a38 {
+    background: rgba(178, 134, 223, 0.12) !important;
+    border: 1px solid var(--honami-border);
+    border-radius: var(--honami-radius);
+}
+
+
+/* Rounded UI */
+
+/* Buttons */
+.lookFilled__201d5,
+.actionButton_f8fa06,
+.button_f563df {
+    border-radius: var(--honami-radius) !important;
+    transition:
+        background-color var(--honami-transition),
+        box-shadow var(--honami-transition),
+        transform var(--honami-transition);
+}
+
+/* Search and Text Inputs */
+input,
+textarea {
+    border-radius: var(--honami-radius) !important;
+}
+
+/* Selected Filter Pills */
+.visual-refresh .pill_a2c9e8 {
+    border-radius: 999px !important;
+}
+
+
+/* Purple Glow and Hover Effects */
+
+/* Brand Buttons */
+.lookFilled__201d5.colorBrand__201d5 {
+    background-color: var(--main-color) !important;
+    box-shadow: var(--honami-glow);
+}
+
+.lookFilled__201d5.colorBrand__201d5:hover {
+    background-color: var(--hover-color) !important;
+    box-shadow: var(--honami-glow-hover);
+    transform: translateY(-1px);
+}
+
+/* General Action Buttons */
+.actionButton_f8fa06,
+.button_f563df {
+    transition:
+        background-color var(--honami-transition),
+        box-shadow var(--honami-transition);
+}
+
+.actionButton_f8fa06:hover,
+.button_f563df:hover {
+    background-color: var(--hover-color) !important;
+    box-shadow: var(--honami-glow);
+}
+
+/* Interactive Hover Transitions */
+.visual-refresh .sidebar_c48ade,
+.members_c8ffbb {
+    transition: background-color var(--honami-transition);
+}
+
+
+/* Selected Channel and Member Highlight */
+
+/* Selected Channels */
+.modeSelected__2ea32 .link__2ea32 {
+    background: rgba(178, 134, 223, 0.30) !important;
+    border: 1px solid var(--honami-border);
+    border-radius: var(--honami-radius);
+    box-shadow: inset 3px 0 0 var(--main-color);
+}
+
+/* Selected Members */
+.selected__91a9d .layout__91a9d {
+    background: rgba(178, 134, 223, 0.25) !important;
+    border: 1px solid var(--honami-border);
+    border-radius: var(--honami-radius);
+}
+
+/* Selected Filter Pills */
+.visual-refresh .pill_a2c9e8.selected_a2c9e8 {
+    border-color: var(--main-color) !important;
+    box-shadow: var(--honami-glow);
+}
+
+
+/* Section 7: Purple Accents */
+
+/* Unread Indicators and Notifications */
+.unreadPill__908e2,
+.bd-toast {
+    background-color: var(--main-color) !important;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar-thumb {
+    background-color: var(--main-color) !important;
+    border: 2px solid transparent;
+    border-radius: 999px;
+    background-clip: padding-box;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: var(--hover-color) !important;
+}
+
+::-webkit-scrollbar-track {
+    background: rgba(178, 134, 223, 0.06);
+}
+
+
+/* Text Readability */
+
+/* Keep Main Text Readable */
+.visual-refresh .chatContent_f75fb0,
+.visual-refresh .sidebar_c48ade,
+.members_c8ffbb {
+    color: #FFFFFF;
 }

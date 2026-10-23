@@ -26,7 +26,7 @@
 
 
     /* Background Settings */
-     --background-image: url(https://media.discordapp.net/attachments/1557772911992115250/1563088950095118356/2026-10-23_141443.png?ex=6adc5b86&is=6adb0a06&hm=1cf5532132348256b47ea5c13913b3b70ecc93b6bf1f98458f16dad8c80370f7&=&format=webp&quality=lossless);
+     --background-image: url(https://media.discordapp.net/attachments/1557772911992115250/1563098159595520062/honami-tra-sharp_1.png?ex=6adc641a&is=6adb129a&hm=2fb717be8475ec1da086d4d8a30b94c85395cf293457dad6baab3cd1531a5725&=&format=webp&quality=lossless&width=2048&height=1170);
   --background-shading: rgba(0, 0, 0, 0.45) !important;
   --background-position: center;
   --background-size: cover;
@@ -41,17 +41,17 @@
 
 /* Chat Area */
 .visual-refresh .chatContent_f75fb0 {
-    background: rgba(178, 134, 223, 0.12) !important;
+    background: rgba(192, 165, 218, 0.12) !important;
 }
 
 /* Sidebar */
 .visual-refresh .sidebar_c48ade {
-    background: rgba(178, 134, 223, 0.25) !important;
+    background: rgba(184, 154, 214, 0.25) !important;
 }
 
 /* Member List */
 .members_c8ffbb {
-    background: rgba(178, 134, 223, 0.18) !important;
+    background: rgba(227, 207, 246, 0.18) !important;
 }
 
 /* Preserve Background Visibility */

@@ -8,13 +8,13 @@
  /*import CSS */
  @import url("https://clearvision.github.io/ClearVision-v7/main.css");
 @import url("https://clearvision.github.io/ClearVision-v7/betterdiscord.css");
-@import url("https://www.fontcraftstudio.com/font/fc-marshmellow");
+@import url("https://fonts.google.com/specimen/IM+Fell+Double+Pica+SC?preview.script=Latn");
 
 :root {
     /* main color */
     --main-color: #b286df; /* main purple color */
     --hover-color: #D2B5F5; /* lighter purple color for hover effects */
-    --main-font: "fc-marshmellow";
+    --main-font: "IM Fell Double Pica SC";
 
     
     /* Soft Lavender Effects */

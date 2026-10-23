@@ -254,18 +254,21 @@ select,
     box-shadow: none !important;
 }
 
-/* Transparent Voice Call UI */
+/* Fully Transparent Voice Call UI */
 
-/* Call controls background */
+/* Call controls */
 [class*="bottomControls"],
 [class*="callControls"],
 [class*="videoControls"] {
-    background-color: rgba(25, 20, 35, 0.35) !important;
+    background: transparent !important;
     box-shadow: none !important;
+    backdrop-filter: none !important;
 }
 
-/* Call header background */
+/* Call header */
 [class*="callHeader"],
 [class*="videoHeader"] {
-    background-color: rgba(25, 20, 35, 0.25) !important;
+    background: transparent !important;
+    box-shadow: none !important;
+    backdrop-filter: none !important;
 }

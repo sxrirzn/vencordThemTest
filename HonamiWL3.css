@@ -1,0 +1,52 @@
+/**
+ * @name Honami Theme
+ * @author sxrirzn and ChatGPT
+ * @version 7.0.1
+ * @description Combined Colors purple
+ */
+
+ /*import CSS */
+ @import url("https://clearvision.github.io/ClearVision-v7/main.css");
+@import url("https://clearvision.github.io/ClearVision-v7/betterdiscord.css");
+@import url("https://www.fontcraftstudio.com/font/fc-marshmellow.css");
+
+:root {
+    /* main color */
+    --main -color: #b286df; /* main purple color */
+    --hover-color: #D2B5F5; /* lighter purple color for hover effects */
+    --main-front: "fc-marshmellow"
+
+    /* Background Settings */
+     --background-image: url(https://media.discordapp.net/attachments/1557772911992115250/1563069477526970378/2026-06-18_190126.png?ex=6adc4963&is=6adaf7e3&hm=cf0b75be07dca39aee82cc8a806eb999291104a55c09b61148bce86b4e84ec3d&=&format=webp&quality=lossless&width=1536&height=959);
+  --background-shading: rgba(0, 0, 0, 0.45) !important;
+  --background-position: center;
+  --background-size: cover;
+}
+
+/* Details and Refinements */
+
+/* Transparent UI */
+.layers__160d8, .visual-refresh .chatContent_f75fb0, 
+.members_c8ffbb, .visual-refresh .sidebar_c48ade {
+    background: transparent !important;
+}
+
+/* Main App Layers */
+.layers__160d8 {
+    background: transparent !important;
+}
+
+/* Chat Area */
+.visual-refresh .chatContent_f75fb0 {
+    background: rgba(178, 134, 223, 0.12) !important;
+}
+
+/* Sidebar */
+.visual-refresh .sidebar_c48ade {
+    background: rgba(178, 134, 223, 0.25) !important;
+}
+
+/* Member List */
+.members_c8ffbb {
+    background: rgba(178, 134, 223, 0.18) !important;
+}

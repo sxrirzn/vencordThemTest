@@ -253,3 +253,19 @@ select,
 [class*="voiceCallWrapper"] [class*="hover"] {
     box-shadow: none !important;
 }
+
+/* Transparent Voice Call UI */
+
+/* Call controls background */
+[class*="bottomControls"],
+[class*="callControls"],
+[class*="videoControls"] {
+    background-color: rgba(25, 20, 35, 0.35) !important;
+    box-shadow: none !important;
+}
+
+/* Call header background */
+[class*="callHeader"],
+[class*="videoHeader"] {
+    background-color: rgba(25, 20, 35, 0.25) !important;
+}

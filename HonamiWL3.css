@@ -8,13 +8,15 @@
  /*import CSS */
  @import url("https://clearvision.github.io/ClearVision-v7/main.css");
 @import url("https://clearvision.github.io/ClearVision-v7/betterdiscord.css");
-@import url("https://fonts.google.com/specimen/IM+Fell+Double+Pica+SC?preview.script=Latn");
+
+/* Import English + Thai Fonts */
+@import url("https://fonts.googleapis.com/css2?family=IM+Fell+Double+Pica+SC&family=Sriracha&display=swap");
 
 :root {
     /* main color */
     --main-color: #b286df; /* main purple color */
     --hover-color: #D2B5F5; /* lighter purple color for hover effects */
-    --main-font: "IM Fell Double Pica SC";
+    --main-font: "IM Fell Double Pica SC", "Sriracha", serif;
 
     
     /* Soft Lavender Effects */
@@ -207,4 +209,26 @@ textarea {
 .visual-refresh .sidebar_c48ade,
 .members_c8ffbb {
     color: #FFFFFF;
+}
+
+
+/* Extended Typography */
+
+:root {
+    --font-primary: "IM Fell Double Pica SC", "Sriracha", serif;
+    --font-display: "IM Fell Double Pica SC", "Sriracha", serif;
+}
+
+/* Chat messages and common Discord text */
+body,
+button,
+input,
+textarea,
+select,
+[class*="messageContent"],
+[class*="username"],
+[class*="headerText"],
+[class*="channelName"],
+[class*="placeholder"] {
+    font-family: "IM Fell Double Pica SC", "Sriracha", serif !important;
 }

@@ -233,26 +233,6 @@ select,
     font-family: "IM Fell Double Pica SC", "Sriracha", serif !important;
 }
 
-/* Voice Panel Hover Transparency */
-
-/* Voice activity panel */
-[class*="callContainer"],
-[class*="voiceCallWrapper"],
-[class*="root__"] {
-    background-color: rgba(195, 186, 205, 0.08) !important;
-}
-
-/* Hovered elements inside voice panels */
-[class*="callContainer"] [class*="hover"],
-[class*="voiceCallWrapper"] [class*="hover"] {
-    background-color: rgba(210, 198, 221, 0.1) !important;
-}
-
-/* Reduce dark outlines and shadows */
-[class*="callContainer"] [class*="hover"],
-[class*="voiceCallWrapper"] [class*="hover"] {
-    box-shadow: none !important;
-}
 
 /* Fully Transparent Voice Call UI */
 

@@ -301,3 +301,14 @@ select,
     box-shadow: none !important;
     backdrop-filter: none !important;
 }
+
+
+/* Unify Chat Date and Timestamp Typography */
+
+[class*="divider"] [class*="timestamp"],
+[class*="divider"] [class*="content"],
+[class*="timestamp"],
+[class*="time"] {
+    font-family: var(--number-font), sans-serif !important;
+    font-variant-numeric: tabular-nums !important;
+}

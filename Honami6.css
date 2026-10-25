@@ -9,14 +9,24 @@
  @import url("https://clearvision.github.io/ClearVision-v7/main.css");
 @import url("https://clearvision.github.io/ClearVision-v7/betterdiscord.css");
 
-/* Import English + Thai Fonts */
-@import url("https://fonts.googleapis.com/css2?family=IM+Fell+Double+Pica+SC&family=Sriracha&display=swap");
+
+/* Import English, Thai, and Number Fonts */
+@import url("https://fonts.googleapis.com/css2?family=IM+Fell+Double+Pica+SC&family=Sriracha&family=Roboto:wght@400;500;600;700&display=swap");
+
 
 :root {
     /* main color */
     --main-color: #b286df; /* main purple color */
     --hover-color: #D2B5F5; /* lighter purple color for hover effects */
-    --main-font: "IM Fell Double Pica SC", "Sriracha", serif;
+    
+
+   /* Font Settings */
+   --english-font: "IM Fell Double Pica SC", serif;
+   --thai-font: "Sriracha";
+   --number-font: "Roboto", sans-serif;
+
+   --main-font: "IM Fell Double Pica SC", "Sriracha", serif;
+
 
     
     /* Soft Lavender Effects */
@@ -212,14 +222,16 @@ textarea {
 }
 
 
+
+
 /* Extended Typography */
 
 :root {
-    --font-primary: "IM Fell Double Pica SC", "Sriracha", serif;
-    --font-display: "IM Fell Double Pica SC", "Sriracha", serif;
+    --font-primary: var(--main-font);
+    --font-display: var(--main-font);
 }
 
-/* Chat messages and common Discord text */
+/* Main Discord Text */
 body,
 button,
 input,
@@ -230,11 +242,48 @@ select,
 [class*="headerText"],
 [class*="channelName"],
 [class*="placeholder"] {
-    font-family: "IM Fell Double Pica SC", "Sriracha", serif !important;
+    font-family: var(--main-font) !important;
 }
 
 
-/* Fully Transparent Voice Call UI */
+/* Global Number Typography */
+
+:root {
+    --number-font: "Roboto", sans-serif;
+    --number-size: 1.05em;
+}
+
+/* Numeric UI Elements */
+[class*="timestamp"],
+[class*="time"],
+[class*="date"],
+[class*="count"],
+[class*="badge"],
+[class*="number"],
+[class*="total"],
+[class*="percentage"],
+[class*="duration"],
+[class*="tabular"],
+[class*="counter"] {
+    font-family: var(--number-font) !important;
+    font-size: var(--number-size) !important;
+    font-variant-numeric: tabular-nums;
+}
+
+/* Nested Numeric UI Elements */
+[class*="timestamp"] *,
+[class*="time"] *,
+[class*="date"] *,
+[class*="count"] *,
+[class*="badge"] *,
+[class*="number"] *,
+[class*="duration"] *,
+[class*="counter"] * {
+    font-family: var(--number-font) !important;
+    font-variant-numeric: tabular-nums;
+}
+
+
 
 /* Call controls */
 [class*="bottomControls"],

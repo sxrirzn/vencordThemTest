@@ -252,3 +252,22 @@ select,
     box-shadow: none !important;
     backdrop-filter: none !important;
 }
+
+/* Unify Chat Date and Timestamp Typography */
+:root {
+    --stamp-font: "IM Fell Double Pica SC", "Sriracha", serif;
+}
+
+/* Divider dates, message timestamps, "Yesterday at 1:35 PM" */
+[class*="divider"] [class*="content"],
+[class*="divider"] [class*="content"] *,
+[class*="timestamp"],
+[class*="timestamp"] *,
+time,
+time * {
+    font-family: var(--stamp-font) !important;
+    font-size: 1em !important;           /* same size for text and numbers */
+    font-weight: 400 !important;
+    letter-spacing: 0.02em;
+    font-variant-numeric: lining-nums tabular-nums;
+}

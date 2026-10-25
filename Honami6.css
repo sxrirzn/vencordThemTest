@@ -303,12 +303,20 @@ select,
 }
 
 
+
 /* Unify Chat Date and Timestamp Typography */
 
-[class*="divider"] [class*="timestamp"],
+/* English Text */
 [class*="divider"] [class*="content"],
 [class*="timestamp"],
 [class*="time"] {
-    font-family: var(--number-font), sans-serif !important;
+    font-family: var(--english-font) !important;
+}
+
+/* Keep Numbers Consistent */
+[class*="divider"] [class*="timestamp"],
+[class*="timestamp"],
+[class*="time"] {
     font-variant-numeric: tabular-nums !important;
 }
+
